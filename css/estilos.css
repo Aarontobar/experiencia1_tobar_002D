@@ -1,0 +1,21 @@
+
+#separator{
+    width: 100%;
+    position: relative;
+}
+
+#separator .content{
+    width: 150%;
+    height: 100px;
+}
+
+.card-border{
+    border: solid 10px #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+#tarjetas{
+    background-color:#ff8c00;
+}
