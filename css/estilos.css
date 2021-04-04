@@ -1,4 +1,24 @@
+.navtext{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar{
+    background:linear-gradient(45deg,#fe0061,#ff893b);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter:hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+
 #separador{
+    background: linear-gradient(45deg,#fe0061,#ffeb3b);
     width: 100%;
     position: relative;
 }
@@ -19,13 +39,18 @@
 }
 
 #texto{
+    text-align:center;
     background-color: #000;
     color: #ffffff;
 }
 
 #texto p{
-    font-size: 14px;
+    font-size: 16px;
     word-spacing: 2px;
+}
+
+.card{
+    background:linear-gradient(45deg,#fe0061,#ffeb3b);
 }
 
 .card-title{
@@ -119,30 +144,4 @@ footer{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
-}
-
-#nosotros{
-    background-color: #000;
-    color: #ffffff;
-}
-
-#nosotros p{
-    font-size: 14px;
-    word-spacing: 2px;
-}
-
-#xd{
-    background: url(../img/fondo4.jpg);
-    background-repeat: repeat;
-    background-size: 75%;
-    padding-top: -20px;
-}
-
-.fot{
-    max-width:500px;
-    max-height:500px;
-}
-
-#buenosdias{
-    color: #ffffff;
 }

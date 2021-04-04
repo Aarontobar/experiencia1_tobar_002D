@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+.navbar{
+    background: linear-gradient(45deg,#fe0061,#ff893b);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter:hue-rotate(0deg);
+    }
+    50%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+.navtext{
+    font-family: 'Press Start 2P', cursive;
+}
+
 section{
     background: url(../img/fondito.jpg);
     background-repeat:repeat;
@@ -28,7 +46,7 @@ section .card{
     position: relative;
     width: 320px;
     height: 320px;
-    margin: 20px;
+    margin:20px;
     transform-style: preserve-3d;
     perspective: 1000px;
 }
@@ -152,3 +170,4 @@ footer{
     font-size: 14px;
     word-spacing: 2px;
     text
+}

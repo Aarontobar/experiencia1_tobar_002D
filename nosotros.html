@@ -5,14 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nosotros</title>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estilos.css"> 
+        <link rel="stylesheet" href="css/estilos1.css"> 
+        <link rel="stylesheet" href="css/barra.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div id="progresbar"></div>
+        <div id="scrollpath"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo1.png" alt="" width="75">gamezone
+                <a class="navbar-brand navtext" href="#">
+                    <img src="img/logo1.png" alt="" width="75px">gamezone
                 </a>
 
                 <button class="navbar-toggler"
@@ -29,7 +35,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="inicio.html">inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">galeria</a></li>
                         <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" >registrarse</a></li>
                         <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" >iniciar secion</a></li>
                     </ul>
@@ -40,7 +46,7 @@
         <div id="nosotros">
             <div class="container-md p-5">
                 <p>nosotros en gamezone somos un equipo unido por una gran pasion por los videojuegos el cual a diario se esfuerza por brindar el mejor servicio posible al proporcionar de la foma mas accesible el acceso y los medios para las comunidades de jugadores de todo el mundo </p>
-                <p>y nuestra gran mision es lograr brindar acceso a una exelente seleccion de juegos a todos los jugadores interesados al rededor del mundo de la manera mas segura, confiable y economica posible.</p>
+                <p>y nuestra mision es lograr brindar acceso a una exelente seleccion de juegos a todos los jugadores interesados al rededor del mundo de la manera mas segura, confiable y economica posible.</p>
             </div>
         </div>
 
@@ -135,8 +141,8 @@
 
        <footer>
            <div class="footer-content">
-               <h3>titulo</h3>
-               <p>aun nose que escribir aqui asi que otra ves xd</p>
+               <h3>gamezone</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum mollitia nulla et nesciunt atque sunt iure neque exercitationem odio.</p>
                <ul class="redes">
                    <li><a href="#"><img src="img/logos1.jpg"></a></li>
                    <li><a herf="#"><img src="img/logos2.png"></a></li>
@@ -150,6 +156,14 @@
            </div>
        </footer>
 
+       <script type="text/javascript">
+        let progress = document.getElementById('progresbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }        
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" 
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" 
         crossorigin="anonymous"></script>
