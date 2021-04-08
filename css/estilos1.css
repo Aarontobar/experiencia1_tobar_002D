@@ -1,6 +1,5 @@
 .navbar{
     background:linear-gradient(45deg,#fe0061,#ff893b);
-    animation: animate 5s linear infinite;
 }
 
 @keyframes animate{
@@ -17,7 +16,7 @@
 }
 
 #nosotros{
-    background-color:#000;
+    background: linear-gradient(45deg,#333333,#666666);
     color: #ffffff;
 }
 
@@ -44,6 +43,7 @@
 
 #separador .content{
     background: linear-gradient(45deg,#fe0061,#ffeb3b);
+    animation: animate 5s linear infinite;
     width: 100%;
     height:50px;
 }
